@@ -1,6 +1,31 @@
 body {
+	padding: 0px;
+	margin: 0px;
+	/*
+	background-color: #0000FF;
     background:url("../images/Toronto_Skyline.jpg") no-repeat;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	background-size:cover;
+	-webkit-background-size:auto 100%;
+	-moz-background-size:auto 100%;
+	background-size:auto 100%;
+	background-position: auto center;
+	*/
+}
+
+@font-face {
+   font-family: Roboto-Light;
+   src: url(../fonts/Roboto-Light.ttf);
+}
+
+#frontpage{
+	font-family: Roboto-Light;
+	text-align: center;
+}
+
+#displaypicture{
+	padding-top: 5%;
+
+	width: 20%;
+	height: 20%;
+	min-width: 200px;
+	min-height: 200px;
 }
