@@ -1,0 +1,6 @@
+body {
+    background:url("../images/Toronto_Skyline.jpg") no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
