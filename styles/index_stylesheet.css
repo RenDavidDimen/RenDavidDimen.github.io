@@ -1,31 +1,102 @@
-body {
-	padding: 0px;
-	margin: 0px;
-	/*
-	background-color: #0000FF;
-    background:url("../images/Toronto_Skyline.jpg") no-repeat;
-	-webkit-background-size:auto 100%;
-	-moz-background-size:auto 100%;
-	background-size:auto 100%;
-	background-position: auto center;
-	*/
+@font-face {
+	font-family: Roboto-Light;
+	src: url(../fonts/Roboto-Light.ttf);
 }
 
 @font-face {
-   font-family: Roboto-Light;
-   src: url(../fonts/Roboto-Light.ttf);
+	font-family: Roboto-Regular;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+.content-center {
+	margin: 0 auto;
+	text-align:center;
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	
+	font-family: Roboto-Light;
+}
+
+ul{
+	list-style-type:none;
+	padding: 10px;
+	margin: 0px;
+	
+	background: #3b5999; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#3b5999, #3b4999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3b5999, #3b4999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3b5999, #3b4999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3b5999, #3b4999); /* Standard syntax */
+}
+
+.navlink{
+	text-align: center;
+	display: inline-block;
+	width: 70px;
+	padding:0px;
+	margin: 0px;
+}
+
+.navlinklarge{
+	text-align: center;
+	display: inline-block;
+	width: 100px;
+	padding:0px;
+	margin: 0px;
+}
+
+li a {
+	display: inline-block;
+    color: white;
+    padding: 0px;
+	margin:0;
+    text-decoration: none;
+	text-align: center;
+}
+
+li a:hover:not(.active) {
+	font-family: Roboto-Regular;
+    color: white;
 }
 
 #frontpage{
-	font-family: Roboto-Light;
 	text-align: center;
+}
+
+#cover-image{
+	background-color: #0000FF;
+    background:url("../images/Toronto_Skyline.jpg")no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	background-position: center;
+	width: 100%;
+	height: 94vh;
+	position: absolute;
+	z-index: -100;
 }
 
 #displaypicture{
 	padding-top: 5%;
+	padding-bottom: 2%;
 
 	width: 20%;
 	height: 20%;
 	min-width: 200px;
 	min-height: 200px;
+}
+
+#title-name{
+	padding-bottom: 2%;
+}
+
+#front-text{
+	padding: 0.5% 0% 0.5% 0%;
+	margin: 0.5% auto 0.5% auto;
+	background-color: rgba(255,255,255,0.8);
+	
+	border-radius:10px;
+	width: 50%;
+	min-width: 500px;
 }
