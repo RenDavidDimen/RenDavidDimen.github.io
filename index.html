@@ -2,26 +2,55 @@
 <html>
     <head>
         <title>Ren-David Dimen</title>
+		
+		<meta charset="utf-8" />
+		
 	    <link rel="stylesheet" type="text/css" href="styles/index_stylesheet.css">
-        <meta charset="utf-8" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
+		<script src="scripts/jquery.localscroll.js" type="text/javascript"></script> 
+		<script src="scripts/jquery.scrollTo.js" type="text/javascript"></script> 
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#nav').localScroll({duration:700});
+			});
+		</script>
+	
 	</head>
 	<body>
-		<nav>
-			<div id="index-nav">
-				<ul>
-					<li class="navlink"><a href="#about">About Me</a></li>
-					<li class="navlink"><a href="#portfolio">Portfolio</a></li>
-					<li class="navlinklarge"><a href="#social">Social Media</a></li>
-				</ul>
-			</div>
+		<nav name="home">
+			<ul id="nav">
+				<li class="navlink"><a href="#home">Home</a></li>
+				<li class="navlink"><a href="#about-me">About Me</a></li>
+				<li class="navlink"><a href="#portfolio">Portfolio</a></li>
+				<li class="navlinklarge"><a href="#social">Social Media</a></li>
+			</ul>
 		</nav>
-		<div id="cover-image"></div>
+		
 		<div id="frontpage">
-			<img class="content-center" id="displaypicture" alt="Ren-David Dimen" src="images/Fall 2015 - Circle.png"/>
-			<div id="front-text">
-				<h1 class="content-center" id="title-name">Ren-David Dimen</h1>
-				<p class="content-center" id="introduction">Welcome to my site! Feel free to browse around and view its content!</p>
+			<div id="cover-image">
 			</div>
+			
+			<div id="frontpage-content">
+				<img class="content-center" id="displaypicture" alt="Ren-David Dimen" src="images/Fall 2015 - Circle.png"/>
+				<div id="front-text-container">
+					<h1 class="content-center" id="title-name">Ren-David Dimen</h1>
+					<p class="content-center" id="introduction">Welcome to my site! Feel free to browse around and view its content!</p>
+				</div>
+			</div>
+		</div>
+		
+		<div name="about-me" id="about-me">
+			<a name="about-me">.</a>
+			<p id="about-me-content">
+				<img id="about-me-photo" alt="Ren-David Dimen" src="images/Fall 2015 - Square.jpg" align="left"/>
+				Hi there, my name is Ren-David Dimen. I am a student who is studying to get my bachelor&#39;s of engineering, specifically in software engineering.
+				The purpose of this website is to allow any viewers to learn more about myself as well as any projects I have and are currently working on. 
+				<br/><br/>
+				In my spare time, I enjoy doing a lot of different things. Some of my hobbies range from coding different applications (web or mobile) to learning card tricks.
+				This website was also originally something I started working on in my spare time. Almost all of the components are structured by myself, save those that are referenced
+				in the sources section located at the bottom of the page.
+			<p/>
 		</div>
 	</body>
 </html>
