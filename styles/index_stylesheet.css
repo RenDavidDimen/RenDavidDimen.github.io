@@ -9,8 +9,8 @@
 }
 
 @font-face {
-	font-family: Aisha Script;
-	src: url(../fonts/Aisha Script.ttf);
+	font-family: Aisha-Script;
+	src: url(../fonts/Aisha-Script.ttf);
 }
 
 .content-center {
@@ -20,7 +20,7 @@
 
 .section-title{
 	text-align:center;
-	font-family: Aisha Script;
+	font-family: Aisha-Script;
 	font-size: 5vw;
 }
 
