@@ -7,9 +7,21 @@
 	font-family: Roboto-Regular;
 	src: url(../fonts/Roboto-Regular.ttf);
 }
+
+@font-face {
+	font-family: Aisha Script;
+	src: url(../fonts/Aisha Script.ttf);
+}
+
 .content-center {
 	margin: 0 auto;
 	text-align:center;
+}
+
+.section-title{
+	text-align:center;
+	font-family: Aisha Script;
+	font-size: 5vw;
 }
 
 html{
@@ -119,9 +131,9 @@ li a:hover:not(.active) {
 /* ------------------- About Me ------------------- */
 
 #about-me{
-	font-size: 20px;
+	font-size: 25px;
 	padding: 40px;
-	height:95vh;
+	height: 100%;
 	
 	background-color: #869DCD;
 }
