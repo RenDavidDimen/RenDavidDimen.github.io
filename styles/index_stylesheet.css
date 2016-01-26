@@ -1,86 +1,3 @@
-@font-face {
-	font-family: Roboto-Light;
-	src: url(../fonts/Roboto-Light.ttf);
-}
-
-@font-face {
-	font-family: Roboto-Regular;
-	src: url(../fonts/Roboto-Regular.ttf);
-}
-
-@font-face {
-	font-family: Aisha-Script;
-	src: url(../fonts/Aisha-Script.ttf);
-}
-
-.content-center {
-	margin: 0 auto;
-	text-align:center;
-}
-
-.section-title{
-	text-align:center;
-	font-family: Aisha-Script;
-	font-size: 5vw;
-}
-
-html{
-	min-width: 700px;
-}
-
-body {
-	padding: 0px;
-	margin: 0px;
-	
-	font-family: Roboto-Light;
-}
-
-/* ---------------- Navigation Bar ---------------- */
-ul{
-	position:fixed;
-	width: 100%;
-	list-style-type:none;
-	padding: 10px 0px 10px 10px;
-	margin: 0px;
-	
-	/* Navigation bar background */
-	background: #3b5999;
-    background: -webkit-linear-gradient(#3b5999, #3b4999); /* For Safari */
-    background: -o-linear-gradient(#3b5999, #3b4999); /* For Opera */
-    background: -moz-linear-gradient(#3b5999, #3b4999); /* For Firefox */
-    background: linear-gradient(#3b5999, #3b4999);
-}
-
-.navlink{
-	text-align: center;
-	display: inline-block;
-	width: 70px;
-	padding:0px;
-	margin: 0px;
-}
-
-.navlinklarge{
-	text-align: center;
-	display: inline-block;
-	width: 100px;
-	padding:0px;
-	margin: 0px;
-}
-
-li a {
-	display: inline-block;
-    color: white;
-    padding: 0px;
-	margin:0;
-    text-decoration: none;
-	text-align: center;
-}
-
-li a:hover:not(.active) {
-	font-family: Roboto-Regular;
-    color: white;
-}
-
 /* ---------------- Initial Display --------------- */
 #frontpage{
 	height: 100vh;
@@ -92,7 +9,7 @@ li a:hover:not(.active) {
 }
 
 #cover-image{
-    background:url("../images/Toronto_Skyline.jpg")no-repeat;
+    background:url("../images/backgrounds/Toronto_Skyline.jpg")no-repeat;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
@@ -118,6 +35,10 @@ li a:hover:not(.active) {
 	padding-bottom: 2%;
 }
 
+#introduction{
+	font-size: 20px;
+}
+
 #front-text-container{
 	padding: 0.5% 0% 0.5% 0%;
 	margin: 0.5% auto 0.5% auto;
@@ -132,7 +53,7 @@ li a:hover:not(.active) {
 
 #about-me{
 	font-size: 25px;
-	padding: 40px;
+	padding: 40px 40px 40px 0px;
 	height: 100%;
 	
 	background-color: #869DCD;
