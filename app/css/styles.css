@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  background-color: #DDD; }
+
+#logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding: 10px; }
+  #logo #image-crop {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 25px; }
+    #logo #image-crop img {
+      display: inline;
+      margin: 0 auto;
+      margin-left: -92%;
+      height: 200%;
+      width: auto; }
+  #logo a {
+    color: white;
+    text-decoration: none; }
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 100; }
+  #navbar nav a {
+    text-decoration: none;
+    color: #DDD;
+    margin: 15px 0px;
+    padding: 0px 25px;
+    font-size: 1.3em; }
+
+.content {
+  padding-top: 40px;
+  padding: 0px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px; }
+  .content .banner {
+    margin: 0;
+    background-image: url("../images/personal01.jpg");
+    background-repeat: no-repeat;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    grid-area: banner;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    height: 100vh;
+    width: 100vw; }
