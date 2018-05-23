@@ -12,18 +12,105 @@
     <title>Ren-David Dimen</title>
   </head>
   <body>
-    <div id="navbar">
-      <div id="logo">
-        <div id="image-crop"><img id="logo-photo" src="images/personal03.jpg"></div><a href="#home">Ren-David Dimen</a>
+    <div class="hero" data-parallax="scroll" data-image-src="images/personal01.jpg" data-position-y="0px" data-speed="0.3" id="home">
+      <div class="banner">
+        <div id="greeting">Hi there! My name's</div>
+        <h1 id="name">Ren-David Dimen</h1>
+        <nav><a class="menu-item" href="#about">About Me</a><a class="menu-item" href="#projects">Projects</a><a class="menu-item" href="#resume">Resum&eacute; </a><a class="menu-item" href="#contact">Contact</a></nav>
       </div>
-      <nav><a class="menu-item" href="#home">Home</a><a class="menu-item" href="#experience">Experience</a><a class="menu-item" href="#resume">Resume</a><a class="menu-item" href="#contact">Contact</a></nav>
     </div>
-    <div class="content" id="home">
-      <h1 class="banner">Ren-David Dimen</h1>
-      <div class="projects" id="experience">Here are some projects I've worked on</div>
+    <div class="section-header" id="about">
+      <div class="header-content">
+        <div class="section-img">
+          <div class="circle-landscape"><img id="about-me-img" src="images/personal02.jpg" alt="A photo of Ren-David Dimen"></div>
+        </div>
+        <div class="section-info">
+          <h1>About Me</h1>
+          <div class="descriptor">Hi there! My name's Ren-David and I am a student who is currently studying at McMaster University. I am planning to graduate this year and gain my Bachelour's of Software Engineering. Apart from being a student, I enjoy editing videos of trips I've gone on, learning card tricks, and working on side projects/apps that I find interesting.</div>
+        </div>
+      </div>
+    </div>
+    <div class="section-header" id="projects">
+      <div class="header-content">
+        <div class="section-info">
+          <h1>Projects</h1>
+          <div class="descriptor">Here are some of the projects I've worked on the past. Technologies used in these projects include C++, Java, HTML, CSS, Javascript and more! Feel free to hover over them to see what technologies were used.</div>
+        </div>
+        <div class="section-img"><img src="images/projects.png" alt="Java Eclipse Project"></div>
+      </div>
+    </div>
+    <div class="section-content" id="project-list">
+      <div class="project-container"><img class="project-img" src="images/projects/ParticleSim/ParticleSimSquare.gif">
+        <div class="project-overlay">
+          <div class="project-desc">
+            <h2>Particle Simulation</h2>
+            <div class="project-tech">Tech: C/C++, OpenMPI</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-container"><img class="project-img" src="images/projects/VirtualCloset/vc.gif">
+        <div class="project-overlay">
+          <div class="project-desc">
+            <h2>VirtualCloset</h2>
+            <div>Tech: Swift, PHP, ARKit</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-container"><img class="project-img" src="images/projects/PacMan/PacMan.gif">
+        <div class="project-overlay">
+          <div class="project-desc">
+            <h2>First Person Pac Man</h2>
+            <div>Tech: C++, OpenGL</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-container"><img class="project-img" src="images/projects/RoadRater/rrOut.png">
+        <div class="project-overlay">
+          <div class="project-desc">
+            <h2>RoadRater</h2>
+            <div>Tech: Java, Google Maps API</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-container"><img class="project-img" src="images/projects/RBC/rbc.jpg">
+        <div class="project-overlay">
+          <div class="project-desc">
+            <h2>RBC International </br> Wire Transfers</h2>
+            <div>Tech: HTML (Pug), SCSS (CSS), Javascript</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-container"><img class="project-img" src="images/projects/bomber/b-man.gif">
+        <div class="project-overlay">
+          <div class="project-desc">
+            <h2>Bomber Man </h2>
+            <div>Tech: Java</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-container"><img class="project-img" src="images/projects/Checkers/Checkers Title.JPG">
+        <div class="project-overlay">
+          <div class="project-desc">
+            <h2>Checkers</h2>
+            <div>Tech: Java</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-header" id="resume">
+      <div class="header-content">
+        <h1>Resum&eacute; </h1>
+      </div>
+    </div>
+    <div class="section-header" id="contact">
+      <div class="header-content">
+        <h1>Contact</h1>
+      </div>
     </div>
     <!--build:js js/main.min.js-->
     <script src="js/custom.js"></script>
     <!--endbuild-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.js"></script>
   </body>
 </html>

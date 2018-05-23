@@ -14,20 +14,84 @@ html
 
 		title Ren-David Dimen
 	body
-		div#navbar
-			#logo
-				#image-crop
-					img#logo-photo(src="images/personal03.jpg")
-				a(href="#home") Ren-David Dimen
-			nav
-				a(class="menu-item" href="#home") Home
-				a(class="menu-item" href="#experience") Experience
-				a(class="menu-item" href="#resume") Resume
-				a(class="menu-item" href="#contact") Contact
-		.content#home
-			h1.banner Ren-David Dimen
-			.projects#experience Here are some projects I've worked on
+		.hero(data-parallax="scroll" data-image-src="images/personal01.jpg" data-position-y="0px" data-speed="0.3")#home
+			.banner
+				#greeting Hi there! My name's
+				h1#name Ren-David Dimen
+				nav
+					a(class="menu-item" href="#about") About Me
+					a(class="menu-item" href="#projects") Projects
+					a(class="menu-item" href="#resume") Resum&eacute; 
+					a(class="menu-item" href="#contact") Contact
+		.section-header#about
+			.header-content
+				.section-img
+					.circle-landscape
+						img#about-me-img(src="images/personal02.jpg" alt="A photo of Ren-David Dimen")
+				.section-info
+					h1 About Me
+					.descriptor Hi there! My name's Ren-David and I am a student who is currently studying at McMaster University. I am planning to graduate this year and gain my Bachelour's of Software Engineering. Apart from being a student, I enjoy editing videos of trips I've gone on, learning card tricks, and working on side projects/apps that I find interesting.
+		.section-header#projects
+			.header-content
+				.section-info
+					h1 Projects
+					.descriptor Here are some of the projects I've worked on the past. Technologies used in these projects include C++, Java, HTML, CSS, Javascript and more! Feel free to hover over them to see what technologies were used.
+				.section-img
+					img(src="images/projects.png" alt="Java Eclipse Project")
+		.section-content#project-list
+			.project-container
+				img.project-img(src="images/projects/ParticleSim/ParticleSimSquare.gif")
+				.project-overlay
+					.project-desc
+						h2 Particle Simulation
+						.project-tech Tech: C/C++, OpenMPI
+						//- .project-read-more Find Out More!
+			.project-container
+				img.project-img(src="images/projects/VirtualCloset/vc.gif")
+				.project-overlay
+					.project-desc
+						h2 VirtualCloset
+						div Tech: Swift, PHP, ARKit
+			.project-container
+				img.project-img(src="images/projects/PacMan/PacMan.gif")
+				.project-overlay
+					.project-desc
+						h2 First Person Pac Man
+						div Tech: C++, OpenGL
+			.project-container
+				img.project-img(src="images/projects/RoadRater/rrOut.png")
+				.project-overlay
+					.project-desc
+						h2 RoadRater
+						div Tech: Java, Google Maps API
+			.project-container
+				img.project-img(src="images/projects/RBC/rbc.jpg")
+				.project-overlay
+					.project-desc
+						h2 RBC International </br> Wire Transfers
+						div Tech: HTML (Pug), SCSS (CSS), Javascript
+			.project-container
+				img.project-img(src="images/projects/bomber/b-man.gif")
+				.project-overlay
+					.project-desc
+						h2 Bomber Man 
+						div Tech: Java
+			.project-container
+				img.project-img(src="images/projects/Checkers/Checkers Title.JPG")
+				.project-overlay
+					.project-desc
+						h2 Checkers
+						div Tech: Java
+		.section-header#resume
+			.header-content
+				h1 Resum&eacute; 
+		.section-header#contact
+			.header-content
+				h1 Contact
 
 		//build:js js/main.min.js
 		script(src="js/custom.js")
 		//endbuild
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+		script(src="js/parallax.js")
