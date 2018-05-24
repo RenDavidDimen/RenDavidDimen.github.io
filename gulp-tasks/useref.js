@@ -9,5 +9,5 @@ gulp.task('useref', function(){
         .pipe(useref())
         .pipe(gulpIf('*.js', uglify()))
         .pipe(gulpIf('*.css', cssnano()))
-        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./docs'))
 });

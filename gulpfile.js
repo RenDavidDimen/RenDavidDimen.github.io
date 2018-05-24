@@ -14,7 +14,7 @@ gulp.task('default', function(callback){
 });
 
 gulp.task('build', function (callback){
-    runSequence('clean:dist', 'pug', 'sass', ['useref', 'images'], callback)
+    runSequence('clean:docs', 'pug', 'sass', ['useref', 'images'], callback)
 });
 
 gulp.task('preview', function(callback){
@@ -38,7 +38,7 @@ gulp.task('browserSync', function(){
 gulp.task('browserPreview', function(){
     browserSync.init({
         server: {
-            baseDir: 'dist'
+            baseDir: 'docs'
         },
     })
 });
@@ -46,8 +46,8 @@ gulp.task('browserPreview', function(){
 // ----------------
 //  For Cleaning
 // ----------------
-gulp.task('clean:dist', function(){
-    return del.sync('dist');
+gulp.task('clean:docs', function(){
+    return del.sync('docs');
 });
 
 gulp.task('cache:clear', function (callback) {

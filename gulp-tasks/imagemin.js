@@ -9,5 +9,5 @@ gulp.task('images', function(){
         .pipe(cache(imagemin({
             progressive: true
         })))
-        .pipe(gulp.dest('./dist/images'))
+        .pipe(gulp.dest('./docs/images'))
 });
