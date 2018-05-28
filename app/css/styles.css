@@ -202,6 +202,11 @@ address {
   width: 100%;
   text-align: center;
   margin: 10px 0px; }
+  .foot-note a {
+    color: orange;
+    text-decoration: none; }
+  .foot-note a:hover {
+    opacity: 0.7; }
 
 .social-media {
   width: 200px;
